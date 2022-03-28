@@ -4,32 +4,12 @@ const note=document.querySelector('.note');
 const colonne=document.querySelector('.Colonne');
 
 const modalContainer=document.getElementById('modal-container');
+const suppModal=document.querySelector('.suppModal');
+const modal=document.querySelector('.modal');
+
+
 const main=document.getElementById('main');
 var i=0;
-var nbrColonnes=0;
-
-function createColonne(i) {
-
-    const span=document.createElement('span');
-    span.innerText=`Colonne ${i}`
-    const divTitre=document.createElement('div');
-    const divContainer=document.createElement('div');
-    const divColonne=document.createElement('div');
-
-    divTitre.setAttribute('class', 'titre');
-    divContainer.setAttribute('class','container');
-    divColonne.setAttribute('class','colonne');
-    divColonne.classList.add('pullUp');
-    divColonne.classList.add(`c${i}`);
-
-
-
-    divTitre.appendChild(span);
-    divColonne.appendChild(divTitre);
-    divColonne.appendChild(divContainer);
-    main.appendChild(divColonne);
-
-}
 
 btnlancement.addEventListener('click',function(){
     nav.classList.toggle('show-nav')
@@ -52,5 +32,37 @@ note.addEventListener('click',function(){
     if(i<1){
         alert('veillez ajouter minimum une colonne')
     }
+    suppModal.addEventListener('click',function(){
+        modalContainer.classList.remove('show-modal')
+       
+    })
+
     
-})   
+})
+
+function createColonne(i) {
+
+    const spanTitre=document.createElement('span');
+    spanTitre.innerText=`Colonne ${i}`
+    const suppColonne=document.createElement('span')
+    suppColonne.innerText='X'
+    const divTitre=document.createElement('div');
+    const divContainer=document.createElement('div');
+    const divColonne=document.createElement('div');
+
+    divTitre.setAttribute('class', 'titre');
+    suppColonne.setAttribute('class','suppColonne')
+    divContainer.setAttribute('class','container');
+    divColonne.setAttribute('class','colonne');
+    divColonne.classList.add('pullUp');
+    divColonne.classList.add(`c${i}`);
+
+
+
+    divTitre.appendChild(spanTitre);
+    divTitre.appendChild(suppColonne);
+    divColonne.appendChild(divTitre);
+    divColonne.appendChild(divContainer);
+    main.appendChild(divColonne);
+
+}
