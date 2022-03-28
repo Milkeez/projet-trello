@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    top: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    background-color: #949BB6;
+
+}
+.btnlancement{
+    background-color: bisque;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+body .show-nav{
+    display: flex;
+}
+nav{
+
+    flex: 1;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    display: none;
+    /*  transform: translateY(-100%) */; 
+   
+}
+
+
+nav button{
+    background-color: #F2B6C1; 
+    box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.253);
+    flex: 1;
+    width: 100%;
+    border-left: 4px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    border-radius: 1%;
+    padding-left: 0.4%;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #949BB6;
+}
+
+#main{
+    flex: 11; 
+    padding: 3% 5%;
+    display: flex;
+    gap: 1%;
+}
+.colonne{
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.315);
+}
+.c1{
+    background-color: #DBA576;
+
+}
+.c2{
+    background-color: #e864ad8a;
+}
+.c3{
+    background-color: #5C322C;
+}
+.c4{
+    background-color: #36798F;
+}
+.c5{
+    background-color: #488C66;
+}
+.titre{
+    font-weight: bold;
+    font-size: large;
+    width: 100%;
+    height: 4%;
+    padding-top: 2%;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.288);
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 96%;
+   /*  overflow-y: scroll; */
+}
+
+#modal-container{
+     display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);  
+}
+#modal-container.show-modal{
+    display: block;
+}
+.modal{
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+   width: 20%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   overflow: hidden;
+   background-color: white;
+   border-radius: 2%;
+}
+.titre-modal{
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    height: 10%;
+}
+.form-modal{
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    gap: 2%;
+    
+}
+form button{
+    width: 100%;
+     padding: 3%; 
+    background-color: green;
+    text-align: center;
+}

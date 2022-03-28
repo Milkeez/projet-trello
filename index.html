@@ -6,9 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+
 
 </head>
 <body>
+   
+    <nav class="bounce">
+        <!-- <div class="menu">. Colonne</div>
+        <div class="menu">. Note</div> -->
+        <button class="Colonne floating">. Colonne</button>
+        <button class="note floating">. Note</button>
+    </nav>
+    <button class="btnlancement floating">Let's go</button>
+    <div id="main">
+       <!--  <div class="colonne pullUp c1">
+            <div class="titre"><span> colonne 1</span></div>
+            <div class="container"></div>
+        </div>
+        <div class="colonne pullUp c2">
+            <div class="titre"><span> colonne 1</span></div>
+            <div class="container"></div>
+        </div>
+        <div class="colonne pullUp c3">
+            <div class="titre"><span> colonne 1</span></div>
+            <div class="container"></div>
+        </div>
+        <div class="colonne pullUp c4">
+            <div class="titre"><span> colonne 1</span></div>
+            <div class="container"></div>
+        </div>
+        <div class="colonne pullUp c5">
+            <div class="titre"><span> colonne 1</span></div>
+            <div class="container"></div>
+        </div> -->
+    </div>
+    <div id="modal-container">
+        <div class="modal slideLeft">
+            <div class="titre-modal">
+                <h3>Nouvelle tache</h3>
+                <span>X</span>
+            </div>
+            <div class="form-modal">
+                <p>Remplir les informations de la nouvelle tache</p>
+                <form action="">
+                    <p>Tache</p>
+                    <textarea name="tache" id="tache" cols="30" rows="10"></textarea>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                    <label for="hdebut">Heure de debut</label>
+                    <input type="time" name="hdebut" id="">
+                    <label for="hfin">Heure de fin</label>
+                    <input type="time" name="hfin" id="hfin">
+                    <button>Ajouter</button>
+                </form>
+            </div>
+        </div>
+    </div>
     
 </body>
 <script src="script.js"></script>
