@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </head>
 <body>
    
@@ -20,26 +19,17 @@
     </nav>
     <button class="btnlancement floating">Let's go</button>
     <div id="main">
-       <!--  <div class="colonne pullUp c1">
+        <!-- <div class="colonne pullUp c1">
             <div class="titre"><span> colonne 1</span></div>
-            <div class="container"></div>
-        </div>
-        <div class="colonne pullUp c2">
-            <div class="titre"><span> colonne 1</span></div>
-            <div class="container"></div>
-        </div>
-        <div class="colonne pullUp c3">
-            <div class="titre"><span> colonne 1</span></div>
-            <div class="container"></div>
-        </div>
-        <div class="colonne pullUp c4">
-            <div class="titre"><span> colonne 1</span></div>
-            <div class="container"></div>
-        </div>
-        <div class="colonne pullUp c5">
-            <div class="titre"><span> colonne 1</span></div>
-            <div class="container"></div>
+            <div class="container">
+                <div class="mainTache">
+                    <div class="btnLeft btn"><<</div>
+                    <div class="containTache"></div>
+                    <div class="btnRight btn">>></div>
+                </div>
+            </div>
         </div> -->
+      
     </div>
     <div id="modal-container">
         <div class="modal slideLeft">
@@ -49,17 +39,29 @@
             </div>
             <div class="form-modal">
                 <p>Remplir les informations de la nouvelle tache</p>
-                <div class="form">
-                    <p>Tache</p>
-                    <textarea name="tache" id="tache" cols="30" rows="10"></textarea>
-                    <label for="date">Date</label>
-                    <input type="date" name="date" id="date">
-                    <label for="hdebut">Heure de debut</label>
-                    <input type="time" name="hdebut" id="hdebut">
-                    <label for="hfin">Heure de fin</label>
-                    <input type="time" name="hfin" id="hfin">
-                    <button>Ajouter</button>
-                </div>
+                <form class="form">
+                    <div>
+                        <p>Tache</p>
+                        <small></small>
+                        <textarea name="tache" class="input" id="tache" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label for="date">Date</label>
+                        <small></small>
+                        <input type="date" class="input" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="hdebut">Heure de debut</label>
+                        <small></small>
+                        <input type="time" class="input" name="hdebut" id="hdebut">
+                    </div>
+                    <div>
+                        <label for="hfin">Heure de fin</label>
+                        <small></small>
+                        <input type="time" class="input" name="hfin" id="hfin">
+                    </div>
+                    <input type="button" class="ajouter" value="Ajouter">
+                <form>
             </div>
         </div>
     </div>

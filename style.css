@@ -9,8 +9,18 @@ body{
     flex-direction: column;
     margin: 0;
     position: relative;
-    background-color: #949BB6;
-
+    background-image: url(img/1191197.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    position: absolute;
+    height: 28%;
+    width: 60%;
+    bottom: 40%;
+    left: 20%;
+    z-index: 0;
 }
 .btnlancement{
     background-color: bisque;
@@ -35,8 +45,7 @@ nav{
     gap: 3%;
     display: none;
     z-index: 5;
-    /*  transform: translateY(-100%) */; 
-   
+    /*transform: translateY(-100%)*/; 
 }
 
 
@@ -68,6 +77,7 @@ nav button:hover{
     gap: 1%;
 }
 .colonne{
+    position: relative;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -99,9 +109,49 @@ nav button:hover{
     transform: scale(1.3);
 }
 .container{
+    display: flex;
+    gap: 2%;
+    flex-direction: column;
     width: 100%;
     height: 96%;
-   /*  overflow-y: scroll; */
+    padding-top: 6%;
+   /*  overflow-y: scroll; */ 
+}
+.mainTache{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    min-height: 5%;
+    height: fit-content;
+    background-color: transparent;
+    z-index: 3;
+
+}
+.btn{
+    font-weight: bold;
+    font-size: large;
+    padding-top: 1%;
+    text-align: center;
+    width: 12%;
+    height: 30%;
+    background-color:transparent;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.4);
+}
+
+.containTache{
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    justify-content: center;
+    text-align: center;
+    width: 76%;
+    height: 100%;
+    font-size: large;
+    border: 1px solid black;
 }
 
 #modal-container{
@@ -151,9 +201,14 @@ nav button:hover{
     gap: 2%;
     
 }
-.form button{
+.ajouter{
     width: 100%;
      padding: 3%; 
     background-color: green;
     text-align: center;
+}
+form div{
+    gap: 1%;
+    display: flex;
+    flex-direction: column;
 }
